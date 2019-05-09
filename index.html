@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/vendor/grid.css">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Nova+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
     <meta charset="UTF-8">
     <title>Jakub Kulaszewicz</title>
 </head>
@@ -18,11 +20,11 @@
         <nav>
             <div class="row">
                 <ul class="main-nav">
-                    <li><a href="#aboutMe">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#github">Github</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#aboutMe" class="js--scroll-to-aboutMe">About me</a></li>
+                    <li><a href="#skills" class="js--scroll-to-skills">Skills</a></li>
+                    <li><a href="#portfolio" class="js--scroll-to-portfolio">Portfolio</a></li>
+                    <li><a href="https://github.com/kulaszewicz" target="_blank">Github</a></li>
+                    <li><a href="#contact" class="js--scroll-to-contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,16 +35,17 @@
         </div>
     </header>
 
-    <section class="section-aboutMe" id="aboutMe">
+    <section class="section-aboutMe js--section-aboutMe" id="aboutMe">
         <div class="row">
-            <h2>About me</h2>
+            <h2>About me<i class="fas fa-graduation-cap"></i></h2>
             <p class="long-copy">
-                Hello, my name is Jakub. I'm an IT student (currently on a 4th semester of engineering degree). I've been coding and solving problems for quite some time. Come and have a look at my work!
+                Hello, my name is Jakub. I'm a Computer Science student (currently on a 4th semester of engineering degree). I've been coding and solving problems for quite some time. Come and have a look at my work!
             </p>
+
         </div>
     </section>
 
-    <section class="section-skills" id="skills">
+    <section class="section-skills js--section-skills" id="skills">
         <div class="row">
             <h2>My skills</h2>
         </div>
@@ -82,7 +85,7 @@
 
     </section>
 
-    <section class="section-portfolio" id="portfolio">
+    <section class="section-portfolio js--section-portfolio" id="portfolio">
         <div class="row">
             <h1>Portfolio</h1>
             <h3>My Recent Projects</h3>
@@ -111,9 +114,58 @@
             <div class="row git">
                 <h3>There are also more projects that I have worked on</h3>
                 <h4>You can check them out by clicking the icon below <i class="icon ion-md-arrow-round-down icon-big"></i></h4>
-                <img src="resources/git.png" class="git-img">
+                <a href="https://github.com/kulaszewicz" target="_blank"><img src="resources/git.png" class="git-img"></a>
             </div>
         </div>
     </section>
+    <section class="section-contact .js--section-contact" id="contact">
+        <div class="row">
+            <h1>Contact</h1>
+            <h2>You can find me here </h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 box">
+                <img src="resources/ja.jpg" class="me-img">
+            </div>
+            <div class="col span-1-of-2 box">
+               <h5>Click<i class="fas fa-level-down-alt"></i></h5>
+                <ul class="skill-nav">
+                    <li>-------------</li>
+                    <li><a href="mailto:s17838@pjwstk.edu.pl?subject=Masz ładne Portfolio"><i class="fas fa-envelope icon-big"></i>E-Mail</li>
+                    <li><a href="https://www.facebook.com/jakub.kulaszewicz" target="_blank"><i class="icon ion-logo-facebook icon-big"></i>Facebook</a></li>
+                    <li><a href="https://discord.gg/kPHrEd" target="_blank"><i class="fab fa-discord icon-big"></i>Discord</a></li>
+                    <li>-------------</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/jakub.kulaszewicz" target="_blank"><i class="fab fa-facebook-f"></i></i></i></a></li>
+                    <li><a href="https://github.com/kulaszewicz" target="_blank"><i class="fab fa-github-alt"></i></i></a></li>
+                    <li><a href="https://discord.gg/kPHrEd" target="_blank"><i class="fab fa-discord"></i></i></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Web page created by Jakub Kulaszewicz. Github big icon designed by Agata Kuczmińska.
+            </p>
+        </div>
+    </footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="js/vendor/jquery.waypoints.min.js"></script>
+<script src="js/script.js"></script>
 </html>
